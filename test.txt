@@ -1,4 +1,1 @@
-I am wondering
-how everything
-works
-?
+sentence = "All good\tthings come to those who wait."
