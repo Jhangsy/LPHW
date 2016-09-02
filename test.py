@@ -1,19 +1,14 @@
-def factorial(num):
-    i = 1
-    factoria = 1
-    if num == 0:
-        return 1
+# pick up or not phone number or renren
+# love letter or not write your "letter"
+# kiss or not
+def f123():
+    #yield 1
+    #yield 2
+    #yield 3
 
-    elif num > 0:
-        while i <= num:
-            factoria = factoria * i
-            i = i + 1
-        return factoria
+    return 1
+    return 2
+    return 3
 
-    else:
-        return "No factorial!"
-
-
-print factorial(0)
-print factorial(-3)
-print factorial(3)
+for item in f123():
+    print item
