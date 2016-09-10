@@ -1,14 +1,16 @@
-# pick up or not phone number or renren
-# love letter or not write your "letter"
-# kiss or not
-def f123():
-    #yield 1
-    #yield 2
-    #yield 3
+class Parent(object):
 
-    return 1
-    return 2
-    return 3
+    def altered(self):
+        print "Parent altered()"
 
-for item in f123():
-    print item
+class Child(Parent):
+    def altered(self):
+        # print "Child, altered()"
+        super(Child, self).altered()
+        #print "Child, after Parent altered()"
+
+dad = Parent()
+son = Child()
+
+#dad.altered()
+son.altered()
