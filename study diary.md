@@ -208,7 +208,7 @@ Data 103学会了markdown，贝叶斯公式，google ngram
 
 ### 9/7
 
-- [x]`__init__ & self` ?
+-[x] `__init__ & self` ?
 
 ### 9/8
 data103
