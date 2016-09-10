@@ -1,19 +1,16 @@
-def factorial(num):
-    i = 1
-    factoria = 1
-    if num == 0:
-        return 1
+class Parent(object):
 
-    elif num > 0:
-        while i <= num:
-            factoria = factoria * i
-            i = i + 1
-        return factoria
+    def altered(self):
+        print "Parent altered()"
 
-    else:
-        return "No factorial!"
+class Child(Parent):
+    def altered(self):
+        # print "Child, altered()"
+        super(Child, self).altered()
+        #print "Child, after Parent altered()"
 
+dad = Parent()
+son = Child()
 
-print factorial(0)
-print factorial(-3)
-print factorial(3)
+#dad.altered()
+son.altered()
